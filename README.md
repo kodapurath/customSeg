@@ -1,6 +1,30 @@
 # customSeg
 A plug and play framework to implement different backbones and decoders for semantic segmentation(credits: [Bonnetal!](https://github.com/PRBonn/bonnetal))
 
+# How to use?
+
+## 1. Clone the repo
+```
+git clone https://github.com/kodapurath/customSeg.git
+```
+## 2. Download a pre-trained model
+```
+wget http://ipb.uni-bonn.de/html/projects/bonnetal/segmentation/cityscapes_darknet53_aspp_2048_os8_76.tar.gz
+tar -xvf cityscapes_darknet53_aspp_2048_os8_76.tar.gz -C customSeg/config/cityscapes
+cd customSeg/
+```
+## 3. Ready to go !
+
+Template
+```
+python ./infer_img.py -p path/to/pretrained/ -i path/to/image.png -l path/to/log/
+
+```
+Example
+
+```
+python ./infer_img.py -p config/cityscapes/cityscapes_darknet53_aspp_2048_os8_76/ -i dataset/cityscapes/leftImg8bit/test/berlin_000019_000019_leftImg8bit.png -l config/cityscapes/cityscapes_darknet53_aspp_2048_os8_76/log/
+```
 ## Directory structure
 Create a dataset folder and store Cityscapes data in it
 

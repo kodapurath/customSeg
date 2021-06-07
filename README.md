@@ -1,5 +1,5 @@
 # customSeg
-A plug and play framework to implement different backbones and decoders
+A plug and play framework to implement different backbones and decoders for semantic segmentation(credits https://github.com/PRBonn/bonnetal)
 
 ## Directory structure
 Create a dataset folder and store Cityscapes data in it
